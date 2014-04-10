@@ -1,9 +1,8 @@
-Chrome App + NodeWebkit
-=======================
+# Chrome App + NodeWebkit
 
 Simple calc + storage.
 
-# Quickstart
+## Quickstart
 
-  npm install
-  node_modules/.bin/nodewebkit .
+    npm install
+    node_modules/.bin/nodewebkit .
