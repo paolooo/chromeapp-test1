@@ -1,0 +1,32 @@
+{
+  "name": "Simple Calc",
+  "version": "0.0.1",
+  "description": "chromeapp + nodewebkit",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "Simple Calc",
+    "toolbar": false,
+    "width": 800,
+    "height": 500,
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paolooo/chromeapp-test1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paolooo/chromeapp-test1/issues"
+  },
+  "homepage": "https://github.com/paolooo/chromeapp-test1",
+  "devDependencies": {
+    "nodewebkit": "~0.8.5"
+  }
+}

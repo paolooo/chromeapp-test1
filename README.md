@@ -1,4 +1,9 @@
-chromeapp-test1
-===============
+Chrome App + NodeWebkit
+=======================
 
-Simple calc + storage
+Simple calc + storage.
+
+# Quickstart
+
+  npm install
+  node_modules/.bin/nodewebkit .
