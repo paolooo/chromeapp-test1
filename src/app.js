@@ -1,21 +1,23 @@
 window.addEventListener('DOMContentLoaded', function() {
   var htmlTotal = document.getElementById('total'),
-      log = document.getElementById('log'),
+      log = document.getElementById('logs'),
       x = 0,
       y = 0,
-      total = 0;
+      total = 0,
+      logs = [];
 
     function update() {
       total = x + y;
       htmlTotal.innerHTML = total;
 
-      chrome.storage.sync.set({"log": total}, function() {
-        updateLocal(total);
+      logs.splice(0, 0, total);
+      chrome.storage.sync.set({"logs": logs}, function() {
+        updateLogs();
       });
     }
 
-    function updateLocal(total) {
-      log.innerHTML = total;
+    function updateLogs() {
+      log.innerHTML = logs.join('<br>');
     }
 
     document.sum.n1.addEventListener('keyup', function(e) {
@@ -28,7 +30,8 @@ window.addEventListener('DOMContentLoaded', function() {
       update();
     });
 
-    chrome.storage.sync.get("log", function(val) {
-      updateLocal(val.log);
+    chrome.storage.sync.get("logs", function(val) {
+      logs = val.logs || []
+      updateLogs();
     });
 });
