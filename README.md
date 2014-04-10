@@ -10,7 +10,7 @@ Simple calc + storage.
 ## Chrome App
 
 1. Open Chrome browser
-2. Navigate to (chrome://extensions)[chrome://extensions]
+2. Navigate to [chrome://extensions](chrome://extensions)
 3. Click "Load unpacked extensions..."
 4. Select `path/to/simple_calc` directory
 5. Click "Simple Calc" icon to run the app.
