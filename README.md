@@ -4,10 +4,16 @@ Simple calc + storage.
 
 ## Quickstart
 
-    $ npm install
-    $ node_modules/.bin/nodewebkit . # To run native App
+You can either run this app as a native desktop app and/or chrome app.
 
-## Chrome App
+#### Run as Native App
+
+    $ npm install
+    $ node_modules/.bin/nodewebkit .
+
+#### Run as Chrome App
+
+You need download [Google Chrome](https://www.google.com/chrome) first if haven't installed it yet.
 
 1. Open Chrome browser
 2. Navigate to [chrome://extensions](chrome://extensions)
